@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form>
+        <input type="button" value="touch me!" onclick="meatball()">
+    </form>
+
+</body>
+
+<!-- writing script after the body can improve the page loading, inproved performance, better SEO,  better user experience  -->
+<script type="text/javascript" >
+    
+    // document.write("hello world");
+    // document.write("i love you");
+    // document.write("Tashkent is the capital of the Uzbekistan");
+    // document.write("the most important thing is you have to have access  to the Internet and the Internet itself  is not accessible to the Internet")
+
+
+    // comment goes here this  type of comment for only one line
+    //comments in javascript file\\
+
+
+
+
+    /* 
+    this is for multiple 
+    line to make it comment
+    */
+
+
+
+    // Variables in Javascript
+
+    // let  tilde = 23;
+    // //variables are case sensitive and it must be started with a letter or a underscore, and only can consist of numbers letters and underscores
+    // // document.write(tilde);
+    
+
+    // //using variables with strings
+    // var tuna = -20;
+    // // document.write(tuna)
+
+    // var text = "hello world"
+    // // document.write(text);
+
+    // var heyy = " john said \" boy do i love bessie \" ";
+    // // document.write(heyy);
+
+
+    // var novalue = null ; // null means no value varailabe;
+    // // document.write(novalue);
+
+    // //----------------------
+
+    // var name = "Ulugbek"
+    // var age = 19;
+    // document.write("<br />" + name + " is my name and my age is " + age);
+
+
+
+    // var some_text = "I am a fish";
+    // var bacon = "bacanator";
+    // var ham = "hamburblarr";
+    // document.write("<br />" + some_text + " " + bacon + ham);
+
+
+    //===============================
+
+    //functions =================
+
+    // function funky(){
+    //     alert("ouch!!!");
+    // }
+
+    // funky();
+
+
+    //============================
+    // using parameters and  functons
+
+    // function meatball(name){
+    //     // alert("my name is " + name);
+    // }
+
+    // meatball("Ulugbek");//1
+    // meatball("norbuaetb");//2
+    // meatball("Ulefefefebek");//3 it is called passing the parameter into a function
+
+    // =================================================
+
+    //  functions with multiple parameters
+
+    // function apples(one, two){
+    //     // document.write("<br />" + one + " is better than " + two);
+    // }
+
+    // apples("bucky", "hubart");
+    // apples("bwry", "hubart");
+    // apples("bucky", "hwfrwrfrt");
+    // apples("efefegky", "efegfegebart"); //passing the informatins to the function
+
+
+    //----------------------------------------------------------------
+    // the return statement
+
+    // function tooeasy() {
+    //     return "tooeasy";
+    // }
+
+    // document.write("<br />" + tooeasy());
+
+    // function addNumbers(a, b){
+    //     var c = a + b;
+    //     return c;
+    // }
+
+    // document.write("<br />" + addNumbers(3,6));
+
+
+    //----------------------------------------------------------------
+    // CALLING A FUNCTION FROM ANOTHER FUNCTION
+        // function dofirst(){
+        //     document.write("I am first bo!" + "<br />");
+        //     // dolast();
+        // }
+
+        // function dolast(){
+        //     document.write("I am second bo!");
+        //     // dofirst();
+        // }
+
+        // function start(){
+        //     dofirst();
+        //     dolast();
+        // }
+
+        // start();
+        // dofirst();
+
+
+        //----------------------------------------------------------------
+
+        //global and local variables
+
+
+        // function spit() {
+        //     var girl = " kelsey"
+        //     document.write(girl);
+        // }
+
+        // spit();
+        // document.write(girl);
+
+        
+
+        // MAth operators
+
+        // var mathh = 4 + 78  + 78;
+        // document.write(mathh);
+
+
+        // var multipl = 54 * 333;
+        // document.write(multipl);
+        
+
+        // var module = 54 % 333;
+        // document.write(module);
+
+        // var divide = 54 % 333;
+        // document.write(divide);
+
+        // var chop = 7;
+        // chop ++ ; // -- , ++ , ++ ;
+        // document.write(chop);
+        
+
+
+        // // Assaignment operators
+        // // ----------------\
+        // var bucky = 24;
+        // bucky += 67; // +=, -=, *=, /=, %=,
+        // bucky -= 32;
+        // bucky *= 4;
+        // bucky /= 5;
+
+        // document.write(bucky);
+
+
+        // if statements
+
+
+        // var apples = 53
+        // var hotdogs = 53;
+        
+        // if(apples == hotdogs){  // !=, >, <, >=, <=, 
+        //     document.write("yes worked");
+        // }
+
+
+        // if else statements
+
+        // var blue = 43;
+        // var red = 76;
+        //     if(blue == red){
+        //         document.write("L love hot");
+        //     }else{
+        //         document.write("L love not");
+        //     }
+
+        // // nesting and Fridays
+
+        // var first = "bucky";
+        // var last = "robbert";
+
+        // if(first == "bucky"){
+        //     if(last == "robberts"){
+        //         document.write("welcome bucky roberts");
+        //     }else {
+        //         document.write("get out from here");
+        //     }
+        // }
+
+
+
+        //complex conditions
+
+        var first = "bucky";
+        var last = "robbert";
+
+
+        if( ( first == "bucky" ) && ( last == "robbert" ) ){ // || it is or and we have and && as we have checked
+            document.write("<p>hello</p>");
+        }
+
+
+        var girl = "emeley";
+
+        switch(girl){
+            case "natalie":
+                document.write("you must liek garden state");
+                break;
+            case "ashley":
+                document.write("oooh u are you sure you");
+                break;
+            default :
+                document.write("oooh uibfebfe  you");
+        }
+
+
+        // for loops
+
+        // var data = 10;
+        // for(i=0; i<data; i++){
+        //     document.write("i love to have thast ");
+        // }
+
+        // while loops
+        var i = 0;
+        while(i < 10){
+            document.write("it is still alive");
+            i++;
+        }
+</script>
+</html>
