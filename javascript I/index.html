@@ -7,12 +7,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript">
+        // function person(name, age) {
+
+        //     this.name = name;
+        //     this.age = age;
+        // }
+
+        // var bucky = new person("ulugbek", 19);
+        // var tylor = new person("Tylor swift", 23);
+
+        // // object initializers
+
+        // ulugbek = {
+        //     name: "Tylor", 
+        //     age: 23, 
+        //     hair: "curly"
+        // };
+
+        // tidalu = {
+        //     name: "Tidalu",
+        //     age: 4, 
+        //     hair: "normal"
+        // };
+        // // adding methods to the object
+
+        // function people(name, age) {
+        //     this.name = name;   
+        //     this.age = age;
+        //     this.yearsUntilRetire = years;
+        // }
+        // function years(){
+        //     var numYears = 65 - this.age;
+        //     return numYears;
+        // }
+        // var natalie = new people("Njfnjf fif e", 30);
+        // var guz = new people("bics jbnjdbs", 43);
+
+        // ARRAYS
+        var peoplee = new Array("hhh", "hddh", "hfefh", "hdsfh", "hagdfweh");
+
+        document.write(peoplee[1]);
+
+
+        // other ways to create arrays
+
+        var things = new Array(3);
+
+        things[0] = "hello ";
+        things[1] = " world ";
+        things[2] = " !";
+
+        document.write(things[0]+things[1]+things[2]);
+
+        // 
+        var stuff = new Array();
+
+        var x = 0;
+        var y =  x + 23;
+
+        stuff[0] = "baconator";
+        stuff[1] = "old thing";
+
+
+        // array properties and methods
+
+        var dudes = new Array("tool", "baconator",  "old thing");
+        document.write(dudes.length);
+        var chiks = new Array("lis", "erim", "hammah");
+
+        var added = dudes.concat(chiks);
+        document.write(added.length);
+        document.write(added[5]);
+    </script>
 </head>
 
-<body>
+<body onunload="alert('good bye')">
+    <!-- for body onLoad , onUnload-->
     <form>
-        <input type="button" value="touch me!" onclick="meatball()">
+        <!-- event handlers -->
+        <!-- <input type="button" value="touch me" onClick="alert('hey now'); alert('two times')"> -->
     </form>
+
+    <!-- <a href="https://google.com" onMouseOut="alert('hey comback')">hover over me!</a> -->
+    <!-- onMouseOver ,onMouseOut, onClick -->
 
 </body>
 
@@ -233,41 +311,73 @@
 
         //complex conditions
 
-        var first = "bucky";
-        var last = "robbert";
+        // var first = "bucky";
+        // var last = "robbert";
 
 
-        if( ( first == "bucky" ) && ( last == "robbert" ) ){ // || it is or and we have and && as we have checked
-            document.write("<p>hello</p>");
-        }
-
-
-        var girl = "emeley";
-
-        switch(girl){
-            case "natalie":
-                document.write("you must liek garden state");
-                break;
-            case "ashley":
-                document.write("oooh u are you sure you");
-                break;
-            default :
-                document.write("oooh uibfebfe  you");
-        }
-
-
-        // for loops
-
-        // var data = 10;
-        // for(i=0; i<data; i++){
-        //     document.write("i love to have thast ");
+        // if( ( first == "bucky" ) && ( last == "robbert" ) ){ // || it is or and we have and && as we have checked
+        //     document.write("<p>hello</p>");
         // }
 
-        // while loops
-        var i = 0;
-        while(i < 10){
-            document.write("it is still alive");
-            i++;
-        }
+
+        // var girl = "emeley";
+
+        // switch(girl){
+        //     case "natalie":
+        //         document.write("you must liek garden state");
+        //         break;
+        //     case "ashley":
+        //         document.write("oooh u are you sure you");
+        //         break;
+        //     default :
+        //         document.write("oooh uibfebfe  you");
+        // }
+
+
+        // // for loops
+
+        // // var data = 10;
+        // // for(i=0; i<data; i++){
+        // //     document.write("i love to have thast ");
+        // // }
+
+        // // while loops
+        // var i = 0;
+        // while(i < 10){
+        //     document.write("it is still alive");
+        //     i++;
+        // }
+
+
+        // //do while loop
+        // var i = 5;
+        // do {
+        //     document.write("it is still alive" + i + " seconds <br />");
+        //     i++;
+        // }while(i <= 20);
+
+        // // objects(OOP in javascript)has properties and methods
+        // var tuna = "hey I am a fishknksnckndjdvndjvdjdvdjvdjvbjdvbdjvdbvjdfbdjvbvjuvburvbrubndnjdndkndksfnsdkalnksdknjsdnkjsdnjksdjnkaskl";
+        // document.write(tuna.length);
+        // document.write("hello");
+
+        // // creating our own objects
+
+        // document.write(bucky.name);
+        // document.write(tylor.age);
+
+        // // object initialization
+
+        // document.write(ulugbek.name + "'s username is " + tidalu.name);
+
+        // // adding methods to the object
+
+        // document.write(natalie.yearsUntilRetire());
+        // document.write(guz.yearsUntilRetire());
+
+
+        // ARRAYS
+
+
 </script>
 </html>
