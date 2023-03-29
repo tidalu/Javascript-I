@@ -79,23 +79,144 @@
         var added = dudes.concat(chiks);
         document.write(added.length);
         document.write(added[5]);
+
+
+        // Join and pop 
+
+        // join method - converts array into string
+        var movies = new Array ("Avatar", "Good will hunting", "Vanilla sky", "Flight club");
+
+        var string1 = movies.join(" - ");
+
+        document.write(string1);
+
+        // pop method - removes the last element of the array
+
+        document.write(movies[3] + "<br />")
+
+        // movies.pop();
+        // document.write(movies[3]);
+
+
+        // reverse, push, sort methods
+
+        // var bp = new Array("head", " shoulders", "knees", "toes");
+
+        // bp.reverse();// it just reverse the array
+
+        // bp.push("tongues", "liver"); // it will add elements to the end of the array
+
+        // bp.sort();// it will sort array alphabetical order
+
+        // var string = bp.join(" - ");
+        // document.write(string);
+
+        // Add array elements using a LOop
+
+        // var pie = prompt("Enter your name: ", "// it is kinda placeholder");
+        // document.write("hrllo" + pie);
+
+        var crap = new Array(3);
+
+        for(var i=0; i<3; i++){
+            // crap[i] = prompt("Please enter elements", "");
+        }
+
+        joinged = crap.join(' = ');
+        document.write(joinged);
+
+        //  cool technique to print array elements
+        // var stuffs = new Array(" apples", "tuna", "pear", "grape");
+        // stuffs.sort();
+
+        // for(var i=0; i<stuffs.length; i++){
+        //     document.write(stuffs[i] + "<br />");
+        // }
+
+        // // Associative arrays
+
+        // var alif = new Array();
+
+        // alif["color"] = "black";
+        // alif["food"] = "date";
+        
+        // document.write("my favourite color is " + alif["food"]);
+
+
+        // Math objects
+
+        // document.write(Math.PI);
+        // document.write(Math.E + "<br/>");
+
+        // // var n = prompt("ENter a number", "");
+        // var answer = Math.sqrt(n);
+
+        // // alert("square root of " + n + " is " + answer);
+
+
+        // // Date objects
+
+        // // document.write("<br/>");
+        // function hello(){
+        //     document.write("Tuna ");
+
+
+        // }
+        // setInterval( hello, 1000);
+
+        // function printtime(){
+        //     var now = new Date();
+        //     var hours = now.getHours();
+        //     var minutes = now.getMinutes();
+        //     var seconds = now.getSeconds();
+        //     var milliseconds = now.getMilliseconds();
+        //     document.write(hours + ":" + minutes + ":" + seconds + ":" + milliseconds)
+        // }
+
+        // setInterval("printtime", 1000);
+
+
+
     </script>
 </head>
 
 <body onunload="alert('good bye')">
     <!-- for body onLoad , onUnload-->
-    <form>
+    <!-- <form> -->
         <!-- event handlers -->
         <!-- <input type="button" value="touch me" onClick="alert('hey now'); alert('two times')"> -->
+    <!-- </form> -->
+
+    <!-- <form>
+        Username: <input type="text">
+        Password: <input type="password">
+                <input type="submit" value="submit">
     </form>
 
-    <!-- <a href="https://google.com" onMouseOut="alert('hey comback')">hover over me!</a> -->
+    
+    <a href="https://google.com" onMouseOut="alert('hey comback')">hover over me!</a> -->
     <!-- onMouseOver ,onMouseOut, onClick -->
+
+    <form name="myForm" id="myForm">
+        Username:  <input type="text" name="username" />
+        <input type="checkbox" name="thebox"/>
+        Password: <input type="password" name="password" />
+        <input type="button" value="Submit!" onClick="validator()">
+    </form>
 
 </body>
 
 <!-- writing script after the body can improve the page loading, inproved performance, better SEO,  better user experience  -->
 <script type="text/javascript" >
+
+
+function validator(){
+    if(document.myForm.thebox.checked){
+        alert("yes it is checked");
+    }else{
+        alert("no it is nt checked");
+    }
+}
     
     // document.write("hello world");
     // document.write("i love you");
@@ -377,7 +498,24 @@
 
 
         // ARRAYS
+        
+
+                // // ACCESSING FORMS
+                // var mi = document.forms[0].length;
+
+                // document.write(mi);
+
+
+        // access form elements
+
+        var y = document.myForm.elements[0].type;
+        document.write(y);
+
+
+
+
 
 
 </script>
+<script src="app.js"></script>
 </html>
