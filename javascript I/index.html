@@ -8,41 +8,41 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <script type="text/javascript">
-        // function person(name, age) {
+        function person(name, age) {
 
-        //     this.name = name;
-        //     this.age = age;
-        // }
+            this.name = name;
+            this.age = age;
+        }
 
-        // var bucky = new person("ulugbek", 19);
-        // var tylor = new person("Tylor swift", 23);
+        var bucky = new person("ulugbek", 19);
+        var tylor = new person("Tylor swift", 23);
 
-        // // object initializers
+        // object initializers
 
-        // ulugbek = {
-        //     name: "Tylor", 
-        //     age: 23, 
-        //     hair: "curly"
-        // };
+        ulugbek = {
+            name: "Tylor", 
+            age: 23, 
+            hair: "curly"
+        };
 
-        // tidalu = {
-        //     name: "Tidalu",
-        //     age: 4, 
-        //     hair: "normal"
-        // };
-        // // adding methods to the object
+        tidalu = {
+            name: "Tidalu",
+            age: 4, 
+            hair: "normal"
+        };
+        // adding methods to the object
 
-        // function people(name, age) {
-        //     this.name = name;   
-        //     this.age = age;
-        //     this.yearsUntilRetire = years;
-        // }
-        // function years(){
-        //     var numYears = 65 - this.age;
-        //     return numYears;
-        // }
-        // var natalie = new people("Njfnjf fif e", 30);
-        // var guz = new people("bics jbnjdbs", 43);
+        function people(name, age) {
+            this.name = name;   
+            this.age = age;
+            this.yearsUntilRetire = years;
+        }
+        function years(){
+            var numYears = 65 - this.age;
+            return numYears;
+        }
+        var natalie = new people("Njfnjf fif e", 30);
+        var guz = new people("bics jbnjdbs", 43);
 
         // ARRAYS
         var peoplee = new Array("hhh", "hddh", "hfefh", "hdsfh", "hagdfweh");
@@ -94,86 +94,86 @@
 
         document.write(movies[3] + "<br />")
 
-        // movies.pop();
-        // document.write(movies[3]);
+        movies.pop();
+        document.write(movies[3]);
 
 
-        // reverse, push, sort methods
+       // reverse, push, sort methods
 
-        // var bp = new Array("head", " shoulders", "knees", "toes");
+        var bp = new Array("head", " shoulders", "knees", "toes");
 
-        // bp.reverse();// it just reverse the array
+        bp.reverse();// it just reverse the array
 
-        // bp.push("tongues", "liver"); // it will add elements to the end of the array
+        bp.push("tongues", "liver"); // it will add elements to the end of the array
 
-        // bp.sort();// it will sort array alphabetical order
+        bp.sort();// it will sort array alphabetical order
 
-        // var string = bp.join(" - ");
-        // document.write(string);
+        var string = bp.join(" - ");
+        document.write(string);
 
-        // Add array elements using a LOop
+      //  Add array elements using a LOop
 
-        // var pie = prompt("Enter your name: ", "// it is kinda placeholder");
-        // document.write("hrllo" + pie);
+        var pie = prompt("Enter your name: ", "// it is kinda placeholder");
+        document.write("hrllo" + pie);
 
         var crap = new Array(3);
 
         for(var i=0; i<3; i++){
-            // crap[i] = prompt("Please enter elements", "");
+            crap[i] = prompt("Please enter elements", "");
         }
 
         joinged = crap.join(' = ');
         document.write(joinged);
 
-        //  cool technique to print array elements
-        // var stuffs = new Array(" apples", "tuna", "pear", "grape");
-        // stuffs.sort();
+    //  / cool technique to print array elements
+        var stuffs = new Array(" apples", "tuna", "pear", "grape");
+        stuffs.sort();
 
-        // for(var i=0; i<stuffs.length; i++){
-        //     document.write(stuffs[i] + "<br />");
-        // }
+        for(var i=0; i<stuffs.length; i++){
+            document.write(stuffs[i] + "<br />");
+        }
 
-        // // Associative arrays
+        // Associative arrays
 
-        // var alif = new Array();
+        var alif = new Array();
 
-        // alif["color"] = "black";
-        // alif["food"] = "date";
+        alif["color"] = "black";
+        alif["food"] = "date";
         
-        // document.write("my favourite color is " + alif["food"]);
+        document.write("my favourite color is " + alif["food"]);
 
 
         // Math objects
 
-        // document.write(Math.PI);
-        // document.write(Math.E + "<br/>");
+        document.write(Math.PI);
+        document.write(Math.E + "<br/>");
 
-        // // var n = prompt("ENter a number", "");
-        // var answer = Math.sqrt(n);
+        // var n = prompt("ENter a number", "");
+        var answer = Math.sqrt(n);
 
-        // // alert("square root of " + n + " is " + answer);
-
-
-        // // Date objects
-
-        // // document.write("<br/>");
-        // function hello(){
-        //     document.write("Tuna ");
+        // alert("square root of " + n + " is " + answer);
 
 
-        // }
-        // setInterval( hello, 1000);
+        // Date objects
 
-        // function printtime(){
-        //     var now = new Date();
-        //     var hours = now.getHours();
-        //     var minutes = now.getMinutes();
-        //     var seconds = now.getSeconds();
-        //     var milliseconds = now.getMilliseconds();
-        //     document.write(hours + ":" + minutes + ":" + seconds + ":" + milliseconds)
-        // }
+        // document.write("<br/>");
+        function hello(){
+            document.write("Tuna ");
 
-        // setInterval("printtime", 1000);
+
+        }
+        setInterval( hello, 1000);
+
+        function printtime(){
+            var now = new Date();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+            var milliseconds = now.getMilliseconds();
+            document.write(hours + ":" + minutes + ":" + seconds + ":" + milliseconds)
+        }
+
+        setInterval("printtime", 1000);
 
 
 
@@ -181,8 +181,8 @@
 </head>
 
 <body onunload="alert('good bye')">
-    <!-- for body onLoad , onUnload-->
-    <!-- <form> -->
+    <!-- for body onLoad , onUnload
+    <form> -->
         <!-- event handlers -->
         <!-- <input type="button" value="touch me" onClick="alert('hey now'); alert('two times')"> -->
     <!-- </form> -->
@@ -191,7 +191,7 @@
         Username: <input type="text">
         Password: <input type="password">
                 <input type="submit" value="submit">
-    </form>
+    </form> -->
 
     
     <a href="https://google.com" onMouseOut="alert('hey comback')">hover over me!</a> -->
@@ -218,14 +218,14 @@ function validator(){
     }
 }
     
-    // document.write("hello world");
-    // document.write("i love you");
-    // document.write("Tashkent is the capital of the Uzbekistan");
-    // document.write("the most important thing is you have to have access  to the Internet and the Internet itself  is not accessible to the Internet")
+    document.write("hello world");
+    document.write("i love you");
+    document.write("Tashkent is the capital of the Uzbekistan");
+    document.write("the most important thing is you have to have access  to the Internet and the Internet itself  is not accessible to the Internet")
 
 
     // comment goes here this  type of comment for only one line
-    //comments in javascript file\\
+    // comments in javascript file\\
 
 
 
@@ -239,274 +239,274 @@ function validator(){
 
     // Variables in Javascript
 
-    // let  tilde = 23;
-    // //variables are case sensitive and it must be started with a letter or a underscore, and only can consist of numbers letters and underscores
-    // // document.write(tilde);
+    let  tilde = 23;
+    //variables are case sensitive and it must be started with a letter or a underscore, and only can consist of numbers letters and underscores
+    document.write(tilde);
     
 
-    // //using variables with strings
-    // var tuna = -20;
-    // // document.write(tuna)
+    //using variables with strings
+    var tuna = -20;
+    // document.write(tuna)
 
-    // var text = "hello world"
-    // // document.write(text);
+    var text = "hello world"
+    // document.write(text);
 
-    // var heyy = " john said \" boy do i love bessie \" ";
-    // // document.write(heyy);
-
-
-    // var novalue = null ; // null means no value varailabe;
-    // // document.write(novalue);
-
-    // //----------------------
-
-    // var name = "Ulugbek"
-    // var age = 19;
-    // document.write("<br />" + name + " is my name and my age is " + age);
+    var heyy = " john said \" boy do i love bessie \" ";
+    // document.write(heyy);
 
 
+    var novalue = null ; // null means no value varailabe;
+    // document.write(novalue);
 
-    // var some_text = "I am a fish";
-    // var bacon = "bacanator";
-    // var ham = "hamburblarr";
-    // document.write("<br />" + some_text + " " + bacon + ham);
+    //----------------------
+
+    var name = "Ulugbek"
+    var age = 19;
+    document.write("<br />" + name + " is my name and my age is " + age);
+
+
+
+    var some_text = "I am a fish";
+    var bacon = "bacanator";
+    var ham = "hamburblarr";
+    document.write("<br />" + some_text + " " + bacon + ham);
 
 
     //===============================
 
     //functions =================
 
-    // function funky(){
-    //     alert("ouch!!!");
-    // }
+    function funky(){
+        alert("ouch!!!");
+    }
 
-    // funky();
+    funky();
 
 
     //============================
     // using parameters and  functons
 
-    // function meatball(name){
-    //     // alert("my name is " + name);
-    // }
+    function meatball(name){
+        alert("my name is " + name);
+    }
 
-    // meatball("Ulugbek");//1
-    // meatball("norbuaetb");//2
-    // meatball("Ulefefefebek");//3 it is called passing the parameter into a function
+    meatball("Ulugbek");//1
+    meatball("norbuaetb");//2
+    meatball("Ulefefefebek");//3 it is called passing the parameter into a function
 
     // =================================================
 
     //  functions with multiple parameters
 
-    // function apples(one, two){
-    //     // document.write("<br />" + one + " is better than " + two);
-    // }
+    function apples(one, two){
+        // document.write("<br />" + one + " is better than " + two);
+    }
 
-    // apples("bucky", "hubart");
-    // apples("bwry", "hubart");
-    // apples("bucky", "hwfrwrfrt");
-    // apples("efefegky", "efegfegebart"); //passing the informatins to the function
+    apples("bucky", "hubart");
+    apples("bwry", "hubart");
+    apples("bucky", "hwfrwrfrt");
+    apples("efefegky", "efegfegebart"); //passing the informatins to the function
 
 
     //----------------------------------------------------------------
     // the return statement
 
-    // function tooeasy() {
-    //     return "tooeasy";
-    // }
+    function tooeasy() {
+        return "tooeasy";
+    }
 
-    // document.write("<br />" + tooeasy());
+    document.write("<br />" + tooeasy());
 
-    // function addNumbers(a, b){
-    //     var c = a + b;
-    //     return c;
-    // }
+    function addNumbers(a, b){
+        var c = a + b;
+        return c;
+    }
 
-    // document.write("<br />" + addNumbers(3,6));
+    document.write("<br />" + addNumbers(3,6));
 
 
     //----------------------------------------------------------------
     // CALLING A FUNCTION FROM ANOTHER FUNCTION
-        // function dofirst(){
-        //     document.write("I am first bo!" + "<br />");
-        //     // dolast();
-        // }
+        function dofirst(){
+            document.write("I am first bo!" + "<br />");
+            // dolast();
+        }
 
-        // function dolast(){
-        //     document.write("I am second bo!");
-        //     // dofirst();
-        // }
+        function dolast(){
+            document.write("I am second bo!");
+            // dofirst();
+        }
 
-        // function start(){
-        //     dofirst();
-        //     dolast();
-        // }
+        function start(){
+            dofirst();
+            dolast();
+        }
 
-        // start();
-        // dofirst();
-
-
-        //----------------------------------------------------------------
-
-        //global and local variables
+        start();
+        dofirst();
 
 
-        // function spit() {
-        //     var girl = " kelsey"
-        //     document.write(girl);
-        // }
+       // ----------------------------------------------------------------
 
-        // spit();
-        // document.write(girl);
+     //   global and local variables
+
+
+        function spit() {
+            var girl = " kelsey"
+            document.write(girl);
+        }
+
+        spit();
+        document.write(girl);
 
         
 
-        // MAth operators
+      //  MAth operators
 
-        // var mathh = 4 + 78  + 78;
-        // document.write(mathh);
+        var mathh = 4 + 78  + 78;
+        document.write(mathh);
 
 
-        // var multipl = 54 * 333;
-        // document.write(multipl);
+        var multipl = 54 * 333;
+        document.write(multipl);
         
 
-        // var module = 54 % 333;
-        // document.write(module);
+        var module = 54 % 333;
+        document.write(module);
 
-        // var divide = 54 % 333;
-        // document.write(divide);
+        var divide = 54 % 333;
+        document.write(divide);
 
-        // var chop = 7;
-        // chop ++ ; // -- , ++ , ++ ;
-        // document.write(chop);
+        var chop = 7;
+        chop ++ ; // -- , ++ , ++ ;
+        document.write(chop);
         
 
 
-        // // Assaignment operators
-        // // ----------------\
-        // var bucky = 24;
-        // bucky += 67; // +=, -=, *=, /=, %=,
-        // bucky -= 32;
-        // bucky *= 4;
-        // bucky /= 5;
+        // Assaignment operators
+        // ----------------\
+        var bucky = 24;
+        bucky += 67; // +=, -=, *=, /=, %=,
+        bucky -= 32;
+        bucky *= 4;
+        bucky /= 5;
 
-        // document.write(bucky);
-
-
-        // if statements
+        document.write(bucky);
 
 
-        // var apples = 53
-        // var hotdogs = 53;
+     //   if statements
+
+
+        var apples = 53
+        var hotdogs = 53;
         
-        // if(apples == hotdogs){  // !=, >, <, >=, <=, 
-        //     document.write("yes worked");
-        // }
+        if(apples == hotdogs){  // !=, >, <, >=, <=, 
+            document.write("yes worked");
+        }
 
 
-        // if else statements
+     //   if else statements
 
-        // var blue = 43;
-        // var red = 76;
-        //     if(blue == red){
-        //         document.write("L love hot");
-        //     }else{
-        //         document.write("L love not");
-        //     }
+        var blue = 43;
+        var red = 76;
+            if(blue == red){
+                document.write("L love hot");
+            }else{
+                document.write("L love not");
+            }
 
-        // // nesting and Fridays
+        // nesting and Fridays
 
-        // var first = "bucky";
-        // var last = "robbert";
+        var first = "bucky";
+        var last = "robbert";
 
-        // if(first == "bucky"){
-        //     if(last == "robberts"){
-        //         document.write("welcome bucky roberts");
-        //     }else {
-        //         document.write("get out from here");
-        //     }
-        // }
-
-
-
-        //complex conditions
-
-        // var first = "bucky";
-        // var last = "robbert";
+        if(first == "bucky"){
+            if(last == "robberts"){
+                document.write("welcome bucky roberts");
+            }else {
+                document.write("get out from here");
+            }
+        }
 
 
-        // if( ( first == "bucky" ) && ( last == "robbert" ) ){ // || it is or and we have and && as we have checked
-        //     document.write("<p>hello</p>");
-        // }
+
+   //     complex conditions
+
+        var first = "bucky";
+        var last = "robbert";
 
 
-        // var girl = "emeley";
-
-        // switch(girl){
-        //     case "natalie":
-        //         document.write("you must liek garden state");
-        //         break;
-        //     case "ashley":
-        //         document.write("oooh u are you sure you");
-        //         break;
-        //     default :
-        //         document.write("oooh uibfebfe  you");
-        // }
+        if( ( first == "bucky" ) && ( last == "robbert" ) ){ // || it is or and we have and && as we have checked
+            document.write("<p>hello</p>");
+        }
 
 
-        // // for loops
+        var girl = "emeley";
 
-        // // var data = 10;
-        // // for(i=0; i<data; i++){
-        // //     document.write("i love to have thast ");
-        // // }
+        switch(girl){
+            case "natalie":
+                document.write("you must liek garden state");
+                break;
+            case "ashley":
+                document.write("oooh u are you sure you");
+                break;
+            default :
+                document.write("oooh uibfebfe  you");
+        }
 
-        // // while loops
-        // var i = 0;
-        // while(i < 10){
-        //     document.write("it is still alive");
-        //     i++;
-        // }
+
+        // for loops
+
+        var data = 10;
+        for(i=0; i<data; i++){
+            document.write("i love to have thast ");
+        }
+
+        // while loops
+        var i = 0;
+        while(i < 10){
+            document.write("it is still alive");
+            i++;
+        }
 
 
-        // //do while loop
-        // var i = 5;
-        // do {
-        //     document.write("it is still alive" + i + " seconds <br />");
-        //     i++;
-        // }while(i <= 20);
+        //do while loop
+        var i = 5;
+        do {
+            document.write("it is still alive" + i + " seconds <br />");
+            i++;
+        }while(i <= 20);
 
-        // // objects(OOP in javascript)has properties and methods
-        // var tuna = "hey I am a fishknksnckndjdvndjvdjdvdjvdjvbjdvbdjvdbvjdfbdjvbvjuvburvbrubndnjdndkndksfnsdkalnksdknjsdnkjsdnjksdjnkaskl";
-        // document.write(tuna.length);
-        // document.write("hello");
+        // objects(OOP in javascript)has properties and methods
+        var tuna = "hey I am a fishknksnckndjdvndjvdjdvdjvdjvbjdvbdjvdbvjdfbdjvbvjuvburvbrubndnjdndkndksfnsdkalnksdknjsdnkjsdnjksdjnkaskl";
+        document.write(tuna.length);
+        document.write("hello");
 
         // // creating our own objects
 
-        // document.write(bucky.name);
-        // document.write(tylor.age);
+        document.write(bucky.name);
+        document.write(tylor.age);
 
         // // object initialization
 
-        // document.write(ulugbek.name + "'s username is " + tidalu.name);
+        document.write(ulugbek.name + "'s username is " + tidalu.name);
 
-        // // adding methods to the object
+        // adding methods to the object
 
-        // document.write(natalie.yearsUntilRetire());
-        // document.write(guz.yearsUntilRetire());
+        document.write(natalie.yearsUntilRetire());
+        document.write(guz.yearsUntilRetire());
 
 
-        // ARRAYS
+        ARRAYS
         
 
-                // // ACCESSING FORMS
-                // var mi = document.forms[0].length;
+                // ACCESSING FORMS
+                var mi = document.forms[0].length;
 
-                // document.write(mi);
+                document.write(mi);
 
 
-        // access form elements
+        access form elements
 
         var y = document.myForm.elements[0].type;
         document.write(y);
