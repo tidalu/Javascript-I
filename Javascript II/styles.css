@@ -1,0 +1,57 @@
+body{
+    background: url('stat.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+h2 {
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+div {
+    background-color: rgba(255,255,255,0.3);
+    height: 100vh;
+    
+    text-shadow: 5px 5px 20px rgb(117, 117, 117);;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 25px;
+}
+
+button:hover, #save-btn:hover {
+    background: darkred;
+}
+#save-btn {
+    background-color: greenyellow;
+}
+
+p {
+    font-size: 30px;
+}
