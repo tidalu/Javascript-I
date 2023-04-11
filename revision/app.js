@@ -242,3 +242,126 @@ var cities = ["New York", "Los Angeles", "Chicago"];
 var fruits = ["apple", "orange", "banana"];
 var numbers = [1, 2, 3, 4, 5];
 var mixed = [1, "apple", "orange", "banana"];
+
+
+//===================================================================\
+// Arrays: Adding and removing elements
+
+var pets = [];
+pets[0] = "dog";
+pets[1] = "cat";
+pets[2] = "hamster";
+pets[3] = "horse";
+pets[4] = "parrot";
+pets[5] = "parrot";
+pets[6] = "parrot";
+
+
+pets.push("dog"); // adds the dog to the end of the array
+pets.pop(); // removes the last element from the array
+
+//===================================================================
+// Arrays: REmoving, inserting and extracting elements
+
+pets.shift(); // removes form the beginning of the array
+pets.unshift("dog", "it"); // adds one or more to the beginning of the array
+
+
+pets.splice(2,2, "hamster", "parrot"); 
+// Use the splice method to insert one or more elements anywhere in an array, while
+// optionally removing one or more elements that come after it. Suppose you have an array with
+// the elements "dog", "cat", "fly", "bug", "ox". The following code adds "pig", "duck", and "emu"
+// after "cat" while removing "fly" and "bug"
+
+
+
+// You could make additions without removing any elements. The following code adds
+// "pig", "duck", and "emu" without removing any elements.
+pets.splice(2, 0, "pig", "duck", "emu");
+
+
+// You can also use the slice method to remove elements from an array.
+pets.splice(2, 2);
+
+
+
+//it is also helpful to copying elements from one array then creating another array
+var noPets = pets.slice(2, 4);
+// The first digit inside the parentheses is the index of the first element to be copied. The
+// second digit is the index of the element after the last element to be copied.
+
+
+
+//===================================================================
+// Arrays: Looping through an array
+// For loops
+for (var i = 0; i < pets.length; i++) { // i stands for iteration / index
+    alert(pets[i]);
+}
+
+//==================================================================
+// For loops
+// flags, Booleans, array length, and loopus interruptus
+
+
+var mathFound = false;
+
+for (var i = 0; i <= 4; i++) {
+    if(cityToCheck === cleanestCities[i]){
+        mathFound = true;
+        alert("You are from cleanset city " + cityToCheck);
+        break; // when it is not needed to check the rest better to break, it will be faster
+    }
+}
+if(mathFound === false){
+    alert("city not found");
+}
+
+var numElements = cleanestCities.length; // gives us the length of the array 
+var mathFound = false;
+
+for (var i = 0; i < numElements; i++) {
+    if(cityToCheck === cleanestCities[i]){
+        mathFound = true;
+        alert("You are from cleanset city " + cityToCheck);
+        break; // when it is not needed to check the rest better to break, it will be faster
+    }
+}
+if(mathFound === false){
+    alert("city not found");
+}
+
+//===================================================================
+// for loops nested 
+var firstNames = ["BlueRay ", "Upchuck ", "Lojack ", "Gizmo ", "Do-Rag "];
+var lastNames = ["Zzz", "Burp", "Dogbone", "Droop"];
+var fullNames = [];
+for (var i = 0; i < firstNames.length; i++) {
+    for(var j=0; j < lastNames.length; j++){
+        fullNames.push(firstNames[i] + " " + lastNames[j]);
+    }
+}
+
+
+// changing case
+
+var cleanestCities = ["Cheyenne", "cheyenne", "Santa Fe", "santa fe", "Tucson", "tucson", "Great Falls","great falls", "Honolulu", "honolulu"];
+var cityToCheck = prompt("Enter your city");
+cityToCheck = cityToCheck.toLowerCase(); // converts the string to lowercase
+citytoCheck = citytoCheck.toUpperCase(); // converts the string to uppercase    
+for(var i = 0; i < cleanestCities.length; i++){
+    if(cityToCheck === cleanestCities[i]){
+        alert("You are from cleanset city " + cityToCheck);
+        break; 
+    }
+}
+
+
+//Strings
+// Measuring length and extracting parts
+cityToCheck = 'bosTon'; 
+var firstChar = cityToCheck.slice(0, 1);
+var otherChars = cityToCheck.slice(1); // extracts the first letter take the rest of the string
+var firstChar = firstChar.toUpperCase();
+var otherChars = otherChars.toLowerCase();
+var cappedCity = firstChar + otherChars;
